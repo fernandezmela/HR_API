@@ -24,3 +24,5 @@ python manage.py runserver
 ### Frontend
 cd frontend
 python3 -m http.server 5500
+
+**Everything made on Linux Ubuntu OS**
