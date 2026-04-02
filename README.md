@@ -25,4 +25,7 @@ python manage.py runserver
 cd frontend
 python3 -m http.server 5500
 
+<img width="1836" height="702" alt="image" src="https://github.com/user-attachments/assets/c88bd4cb-cfea-46af-9837-7675d525eadf" />
+
+
 **Everything made on Linux Ubuntu OS**
