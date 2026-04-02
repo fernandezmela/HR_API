@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ticket - SupportHub</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="#" id="logoutBtn">Logout</a>
+  </div>
+
+  <div class="container">
+    <div class="card" id="ticketBox"></div>
+
+    <div class="card">
+      <h2>Update Ticket</h2>
+      <form id="updateForm" style="display:none;">
+        <div id="assignRow">
+          <label>Assign Staff</label>
+          <select id="assignedUser">
+            <option value="">Unassigned</option>
+          </select>
+        </div>
+
+        <label>Status</label>
+        <select id="status">
+          <option value="open">Open</option>
+          <option value="in_progress">In Progress</option>
+          <option value="resolved">Resolved</option>
+          <option value="closed">Closed</option>
+        </select>
+
+        <label>Priority</label>
+        <select id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Comments</h2>
+      <div id="commentsBox"></div>
+
+      <form id="commentForm">
+        <textarea id="commentBody" placeholder="Write a comment..." required></textarea>
+        <button type="submit">Add Comment</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ticket.js"></script>
+</body>
+</html>

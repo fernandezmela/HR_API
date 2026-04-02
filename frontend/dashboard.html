@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - SupportHub</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">SupportHub</div>
+    <div>
+      <span id="welcome" style="margin-right: 15px;"></span>
+      <a href="#" id="logoutBtn" class="btn-outline">Logout</a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- CREATE TICKET (CUSTOMER ONLY) -->
+    <div class="card" id="createTicketSection" style="display:none;">
+      <h2>Create Ticket</h2>
+      <form id="createTicketForm">
+        <input id="title" type="text" placeholder="Ticket title" required />
+        <textarea id="description" placeholder="Describe your issue..." required></textarea>
+        <button type="submit">Submit Ticket</button>
+      </form>
+    </div>
+
+    <!-- MANAGER SECTION -->
+    <div class="card" id="managerSection" style="display:none;">
+      <h2>Manager Tools</h2>
+      <p class="small">You can assign tickets inside each ticket page.</p>
+      <select id="assigned_to" style="display:none;"></select>
+    </div>
+
+    <!-- TICKETS LIST -->
+    <div class="card">
+      <h2>Tickets</h2>
+      <div id="tickets"></div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>
